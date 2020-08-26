@@ -1,38 +1,104 @@
-.App {
+.Container {
+  width: 40%;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+  color: #4d4d4d;
+  font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+
+h1 {
+  width: 100%;
+  font-size: 90px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #ededed;
+  padding: 16px 32px;
+}
+
+.completed {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+li:hover img {
+  display: block;
+}
+
+ul li img {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  margin: auto 0 18px 0;
+}
+
+li label {
+  background-color: transparent;
+  word-break: break-all;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ededed;
+  color: #4d4d4d;
+  font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.003);
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+}
+
+::placeholder {
+  color: gray;
+  font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  opacity: 0.3;
+  font-weight: 300;
+}
+
+footer {
+  color: #777;
+  padding: 10px 15px;
+  height: 62px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer button {
+  border: none;
+  background-color: transparent;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #777777;
+  line-height: 16px;
+  margin: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer button:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.selected {
+  border-radius: 2px;
+  border: solid 1px #00b0f0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
