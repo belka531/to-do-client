@@ -1,5 +1,6 @@
 .Container {
-  width: 40%;
+  width: 30%;
+  min-width: 400px;
   margin: auto;
   background: #ffffff;
   border-radius: 2px;
@@ -43,10 +44,10 @@ li:hover img {
 ul li img {
   display: none;
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 10px;
-  bottom: 0;
   margin: auto 0 18px 0;
+  transform: translate(0, -50%);
 }
 
 li label {
